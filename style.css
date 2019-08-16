@@ -4,28 +4,25 @@
   max-width: 100%;
   height: auto;
   align-self: center;
-  grid-template-rows: 50px 200px 300px 300px 300px 300px 300px;
+  grid-template-rows: 50px 200px 300px 300px auto auto 30px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-
 }
 
 /*nav*/
 .nav {
   text-decoration: none;
-
-
 }
 
 a {
-color: #ffff;
+  color: #ffff;
   text-decoration: none;
 }
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  /*  margin: 0;
+  padding: 0;*/
   display: flex;
   justify-content: space-between;
   display: flex;
@@ -45,7 +42,6 @@ li {
   background-position: center;
   background-size: cover;
   padding-top: 10px;
-
 }
 
 .title {
@@ -54,32 +50,163 @@ li {
   padding-top: 250px;
 }
 
-.services{
+/*services*/
+.services {
   padding-top: 500px;
   text-align: center;
-
 }
 
 .channels {
   color: black;
   width: 100px;
-   height: 50px;
-   overflow-y: auto;
+  height: 50px;
+  overflow-y: auto;
   display: inline-block;
 }
 
 .cards {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: flex-start;
-   flex-direction: row;
-   max-height: 200vh;
-   padding-top: 550px;
-   padding-left: 35px;
- }
- .cards img {
-   margin: 20px;
-   border: 3px solid #000;
-   box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
-   max-width: 25vw;
- }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  max-height: 200vh;
+  padding-top: 550px;
+  padding-left: 85px;
+}
+
+.cards img {
+  margin: 8px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  max-width: 25vw;
+}
+
+/*contact*/
+.contact {
+  background-color: #070933;
+  margin-top: 1000px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info{
+  padding: 40px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+/* contact form */
+
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #070933;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #070933; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#070933;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#070933; }
+
+
+
+
+/*footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+/*back to top*/
+.btn {
+  display: inline-block;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+  margin: .5em 0;
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: gray;
+  /* Set a background color */
+  color: #f9f9f9;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+#myBtn:hover {
+  background-color: #FFA500;
+  /* Add an orange background on hover */
+}

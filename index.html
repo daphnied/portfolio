@@ -23,19 +23,20 @@
     <div class="about">
       <div class="nav">
         <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">WORK</a></li>
-          <li><a href="">CONTACT</a></li>
+          <li><a href="#title">HOME</a></li>
+          <li><a href="#cards">WORK</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </div>
-    <div class="title">
+    <!--title-->
+    <div class="title" id="title">
       <h1>Daphnie Donnell</h1>
       <h2>Web Designer</h2>
     </div>
     <!--services-->
-    <div class="services">
-      <p>Make an memorable impression on customers and clients with customized social medial templates.</p>
+    <div class="services" id="services">
+      <p>Make a memorable impression on customers and clients with customized social medial templates.</p>
       <ul>
         <li class="channels">Instagram</li>
         <li class="channels">Twitter</li>
@@ -47,22 +48,57 @@
         <li class="channels">Single Page Websites</li>
       </ul>
     </div>
-
-    <div class="cards">
+    <!--gallery-->
+    <div class="cards" id="cards">
       <img src="img/blogpost.png" alt="digital nomad definition">
       <img src="img/mask.png" alt="social media template">
       <img src="img/wish.png" alt="social media template">
       <img src="img/quote.png" alt="social media template">
-
       <img src="img/sharon.png" alt="social media template">
       <img src="img/media.png" alt="social media template">
+    </div>
+    <!--contact-->
+    <div class="contact" id="contact">
+      <p class="info">Let's Discuss Your Project. For questions or quotes, send an email or use the form to get in touch.</p>
       
+      <a target="_blank" href="mailto:daphniedonnell@mgmail.com"><i class="far fa-envelope fa-5x" style="padding-right: 30px"></i></a>
+      <br>
+      <section class="social">
+        <div class="box">
+          <a target="_blank" href="https://twitter.com/msddonnell"><i class="fab fa-twitter fa-2x" style="padding-right: 30px"></i></a>
+        </div>
+
+        <div class="box">
+          <a target="_blank" href="https://github.com/daphnied"><i class="fab fa-github fa-2x" style="padding-right: 30px"></i></a>
+        </div>
+
+        <div class="box">
+          <a target="_blank" href="https://www.linkedin.com/in/ddonnell"><i class="fab fa-linkedin-in fa-2x" style="padding-right: 30px"></i></a>
+        </div>
+
+        <div class="box">
+          <a target="_blank" href="https://www.pinterest.com/daphnied"><i class="fab fa-pinterest-p fa-2x" style="padding-right: 30px"></i></a>
+        </div>
+
+
     </div>
 
+    <!--contact form-->
+    <form>
+      <input name="name" type="text" class="feedback-input" placeholder="Name" />
+      <input name="email" type="text" class="feedback-input" placeholder="Email" />
+      <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+      <input type="submit" value="SUBMIT"/>
+    </form>
 
-    <div class="contact"></div>
-    <div class="contact"></div>
-    <div class="contact"></div>
+
+    <!--footer-->
+    <footer id="main-footer" class="grid">
+      <div>&copy; 2019 Daphnie Donnell</div>
+      <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      </div>
+    </footer>
 
   </div>
 </body>
