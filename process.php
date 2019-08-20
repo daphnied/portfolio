@@ -6,11 +6,11 @@ $mail = new PHPMailer;
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 $fromname='contact us';
 $row='daphniedonnell@gmail.com';
-//$mail->isSMTP(); //comment the this line if you want to test it online on your hosting not comment this line if you going to test it on your loca; computer.                                     
+//$mail->isSMTP(); //comment the this line if you want to test it online on your hosting not comment this line if you going to test it on your loca; computer.
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'daphniedonnell@gmail.com';	                 // SMTP username
-$mail->Password = 'Dumplin$s';                           // SMTP password
+$mail->Username = '@gmail.com';	                 // SMTP username
+$mail->Password = '';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 $mail->FromName=$fromname;
